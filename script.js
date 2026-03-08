@@ -38,6 +38,7 @@ const data = {
     ]
 };
 
+// Preenche as tabelas
 for (const mode in data) {
     const tbody = document.querySelector(`#${mode} tbody`);
     data[mode].forEach(([name, score]) => {
@@ -46,3 +47,19 @@ for (const mode in data) {
         tbody.appendChild(tr);
     });
 }
+
+// Controle de abas
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const tab = btn.dataset.tab;
+
+        contents.forEach(c => c.classList.remove("active"));
+        document.getElementById(tab).classList.add("active");
+
+        tabs.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+    });
+});
