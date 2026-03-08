@@ -1,144 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Brazil Bridging Leaderboard</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <h1>Leaderboard de Jogadores</h1>
 
-<header>
+    <div class="mode" id="extra-short">
+        <h2>EXTRA SHORT</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-<h1>Brazil Bridging Leaderboard</h1>
+    <div class="mode" id="short">
+        <h2>SHORT</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-<p class="intro">
-Ranking brasileiro de bridging. Compare tempos e veja quem domina cada técnica.
-</p>
+    <div class="mode" id="normal">
+        <h2>NORMAL</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-</header>
+    <div class="mode" id="long">
+        <h2>LONG</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-<nav>
+    <div class="mode" id="inclined-short">
+        <h2>INCLINED SHORT</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-<button onclick="showCategory('inclined')">Inclined</button>
-<button onclick="showCategory('onestack')">OneStack</button>
+    <div class="mode" id="inclined">
+        <h2>INCLINED</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-</nav>
+    <div class="mode" id="onestack">
+        <h2>ONESTACK</h2>
+        <table>
+            <thead>
+                <tr><th>Nome</th><th>Pontuação</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-<section id="leaderboard">
-
-
-<div class="category" id="inclined">
-
-<h2>Inclined</h2>
-
-<div class="player">
-<span class="rank">🥇</span>
-<span class="name">Thirty</span>
-<span class="time">6.60s</span>
-</div>
-
-<div class="player">
-<span class="rank">🥈</span>
-<span class="name">guqa</span>
-<span class="time">7.25s</span>
-</div>
-
-<div class="player">
-<span class="rank">🥉</span>
-<span class="name">Bzuki</span>
-<span class="time">7.55s</span>
-</div>
-
-<div class="player">
-<span class="rank">4°</span>
-<span class="name">jogadinhas</span>
-<span class="time">7.70s</span>
-</div>
-
-<div class="player">
-<span class="rank">5°</span>
-<span class="name">Limaaas</span>
-<span class="time">8.00s</span>
-</div>
-
-</div>
-
-
-<div class="category hidden" id="onestack">
-
-<h2>OneStack</h2>
-
-<div class="player">
-<span class="rank">🥇</span>
-<span class="name">Thirty</span>
-<span class="time">11.40s</span>
-</div>
-
-<div class="player">
-<span class="rank">🥈</span>
-<span class="name">Opku</span>
-<span class="time">11.60s</span>
-</div>
-
-<div class="player">
-<span class="rank">🥉</span>
-<span class="name">XuyeWhatsApp</span>
-<span class="time">11.80s</span>
-</div>
-
-<div class="player">
-<span class="rank">4°</span>
-<span class="name">Nesix</span>
-<span class="time">11.80s</span>
-</div>
-
-<div class="player">
-<span class="rank">5°</span>
-<span class="name">jogadinhas</span>
-<span class="time">11.80s</span>
-</div>
-
-<div class="player">
-<span class="rank">6°</span>
-<span class="name">Deathlly</span>
-<span class="time">11.80s</span>
-</div>
-
-<div class="player">
-<span class="rank">7°</span>
-<span class="name">Vzku</span>
-<span class="time">11.85s</span>
-</div>
-
-<div class="player">
-<span class="rank">8°</span>
-<span class="name">Abacate</span>
-<span class="time">11.85s</span>
-</div>
-
-<div class="player">
-<span class="rank">9°</span>
-<span class="name">Pxdrq</span>
-<span class="time">11.85s</span>
-</div>
-
-<div class="player">
-<span class="rank">10°</span>
-<span class="name">kirosh</span>
-<span class="time">11.90s</span>
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
