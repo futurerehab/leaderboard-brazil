@@ -35,25 +35,27 @@ const data = {
 
 // Preenche as tabelas
 for(const mode in data){
-    const tbody=document.querySelector(`#${mode} tbody`);
-    data[mode].forEach(([name,score])=>{
-        const tr=document.createElement("tr");
-        tr.innerHTML=`<td>${name}</td><td>${score.toFixed(1)}</td>`; // força 1 casa decimal
+    const tbody = document.querySelector(`#${mode} tbody`);
+    data[mode].forEach(([name, score]) => {
+        const tr = document.createElement("tr");
+        // Se inteiro, adiciona .0; se decimal, mantém original
+        const displayScore = (score % 1 === 0) ? score.toFixed(1) : score;
+        tr.innerHTML = `<td>${name}</td><td>${displayScore}</td>`;
         tbody.appendChild(tr);
     });
 }
 
 // Controle de abas
-const tabs=document.querySelectorAll(".tab-btn");
-const contents=document.querySelectorAll(".tab-content");
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
 
-tabs.forEach(btn=>{
-    btn.addEventListener("click",()=>{
-        const tab=btn.dataset.tab;
-        contents.forEach(c=>c.classList.remove("active"));
+tabs.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const tab = btn.dataset.tab;
+        contents.forEach(c => c.classList.remove("active"));
         document.getElementById(tab).classList.add("active");
-        tabs.forEach(b=>b.classList.remove("active"));
+        tabs.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-        window.scrollTo({top:0,behavior:"smooth"});
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
