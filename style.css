@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'GothicWar';
-    src: url('fonts/GothicWar.otf') format('opentype');
-}
-
 body {
-    font-family: 'GothicWar', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: #330000;
     color: #fff;
     margin: 0;
@@ -12,20 +7,21 @@ body {
 }
 
 header {
-    background-color: #000;
+    background-color: #000000;
     padding: 20px;
 }
 
 header h1 {
     font-family: 'Orbitron', sans-serif;
-    color: #ff4444;
+    color: #FF4444;
     margin: 0 0 15px 0;
+    font-size: 3em;
 }
 
 .main-menu {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     margin-top: 10px;
 }
@@ -39,21 +35,31 @@ header h1 {
 
 .menu-group span {
     font-weight: bold;
-    color: #ff6666;
+    color: #FF8888;
 }
 
 nav button {
     background-color: #220000;
     color: #fff;
-    border: 1px solid #ff4444;
-    padding: 8px 12px;
+    border: 2px solid #FF4444;
+    padding: 10px 15px;
     cursor: pointer;
     transition: 0.3s;
     font-family: 'Orbitron', sans-serif;
+    position: relative;
+}
+
+nav button .badge {
+    background-color: #FF4444;
+    color: #000;
+    font-size: 0.8em;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 5px;
 }
 
 nav button:hover, nav button.active {
-    background-color: #ff4444;
+    background-color: #FF4444;
     color: #000;
 }
 
@@ -70,21 +76,36 @@ main {
     display: block;
 }
 
+.mode-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FF6666;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.leaderboard-card {
+    background-color: #000;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #FF4444;
+    margin-bottom: 30px;
+}
+
 table {
-    width: 70%;
-    margin: 20px auto;
+    width: 80%;
+    margin: 0 auto;
     border-collapse: collapse;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 th, td {
-    border: 1px solid #000;
+    border: 1px solid #FF4444;
     padding: 10px;
 }
 
 th {
     background-color: #220000;
-    color: #ff8888;
+    color: #FF8888;
 }
 
 tr:nth-child(even) {
